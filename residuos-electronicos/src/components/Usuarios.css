@@ -1,0 +1,53 @@
+/* Usuarios.css */
+
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+/* Centrar el botón "Agregar Usuario" */
+.agregar-usuario-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.agregar-usuario-button {
+  background-color: #007bff; /* Color del botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

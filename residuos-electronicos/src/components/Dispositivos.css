@@ -1,0 +1,76 @@
+/* Importar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo para el encabezado */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del botón */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #388e3c;
+  color: white;
+  font-weight: bold;
+  margin: 10px auto;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+/* Estilo para el contenedor de la tabla */
+.MuiTableContainer-root {
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Asegura que el contenido no se salga de los bordes */
+}
+
+/* Estilo para las celdas del encabezado de la tabla */
+.MuiTableCell-head {
+  background-color: #e8f5e9;
+  font-weight: bold;
+}
+
+/* Estilo para las celdas del cuerpo de la tabla */
+.MuiTableCell-body {
+  color: #555;
+}
+
+/* Estilo para el diálogo */
+.MuiDialog-paper {
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para los campos de texto */
+.MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+/* Estilo para los botones primarios */
+.MuiButton-containedPrimary {
+  background-color: #388e3c;
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #2e7d32;
+}

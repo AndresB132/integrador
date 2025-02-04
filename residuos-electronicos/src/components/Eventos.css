@@ -1,0 +1,67 @@
+/* Eventos.css */
+
+/* Estilo para el encabezado */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del botón */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Estilo para el contenedor de la tabla */
+.MuiTableContainer-root {
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las celdas del encabezado de la tabla */
+.MuiTableCell-head {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Estilo para las celdas del cuerpo de la tabla */
+.MuiTableCell-body {
+  color: #555;
+}
+
+/* Estilo para el diálogo */
+.MuiDialog-paper {
+  padding: 20px;
+}
+
+/* Estilo para los campos de texto */
+.MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+/* Estilo para los botones primarios */
+.MuiButton-containedPrimary {
+  background-color: #1976d2;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #1565c0;
+}
