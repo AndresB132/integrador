@@ -1,4 +1,4 @@
-/* Ubicaciones.css */
+/* 📁 Ubicaciones.css */
 
 /* Estilo para el encabezado */
 h2 {
@@ -6,19 +6,6 @@ h2 {
   color: #333;
   text-align: center;
   margin-bottom: 20px;
-}
-
-/* Estilo para los botones */
-button {
-  background-color: #1976d2;
-  color: white;
-  font-weight: bold;
-  margin: 10px auto;
-  display: block;
-}
-
-button:hover {
-  background-color: #1565c0;
 }
 
 /* Centrar el botón "Agregar Ubicación" */
@@ -36,6 +23,7 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .agregar-ubicacion-button:hover {
@@ -47,34 +35,109 @@ button:hover {
   margin: 20px auto;
   max-width: 90%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Estilo para las celdas del encabezado de la tabla */
 .MuiTableCell-head {
   background-color: #f5f5f5;
   font-weight: bold;
+  text-align: left;
 }
 
 /* Estilo para las celdas del cuerpo de la tabla */
 .MuiTableCell-body {
   color: #555;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Efecto hover en las filas de la tabla */
+.MuiTableRow-root:hover {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para los botones en la columna "Acciones" */
+.MuiButton-root {
+  margin-right: 8px;
+  background-color: #28a745; /* Verde para "Editar" */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  background-color: #218838; /* Verde oscuro */
+}
+
+.MuiButton-root:last-child {
+  background-color: #dc3545; /* Rojo para "Eliminar" */
+}
+
+.MuiButton-root:last-child:hover {
+  background-color: #c82333; /* Rojo oscuro */
 }
 
 /* Estilo para el diálogo */
 .MuiDialog-paper {
   padding: 20px;
+  border-radius: 8px;
 }
 
 /* Estilo para los campos de texto */
 .MuiTextField-root {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 /* Estilo para los botones en el diálogo */
 .MuiButton-containedPrimary {
   background-color: #1976d2;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .MuiButton-containedPrimary:hover {
   background-color: #1565c0;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Estilo para mensajes de éxito */
+.success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  .agregar-ubicacion-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .MuiTableContainer-root {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .MuiTableCell-head,
+  .MuiTableCell-body {
+    font-size: 14px;
+    padding: 8px;
+  }
 }

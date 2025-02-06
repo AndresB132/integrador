@@ -15,6 +15,12 @@ button {
   font-weight: bold;
   margin: 10px auto;
   display: block;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
@@ -25,7 +31,7 @@ button:hover {
 .agregar-punto-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Ajusta el margen según sea necesario */
+  margin-top: 20px;
 }
 
 .agregar-punto-button {
@@ -36,6 +42,7 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .agregar-punto-button:hover {
@@ -46,24 +53,44 @@ button:hover {
 .leaflet-container {
   margin: 20px auto;
   max-width: 90%;
+  height: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Responsividad del mapa */
+@media (max-width: 768px) {
+  .leaflet-container {
+    height: 400px;
+  }
 }
 
 /* Estilo para el diálogo */
 .MuiDialog-paper {
   padding: 20px;
+  border-radius: 10px;
 }
 
 /* Estilo para los campos de texto */
 .MuiTextField-root {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 /* Estilo para los botones en el diálogo */
 .MuiButton-containedPrimary {
-  background-color: #ff5722;
+  background-color: #ff5722 !important;
+  color: white !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .MuiButton-containedPrimary:hover {
-  background-color: #e64a19;
+  background-color: #e64a19 !important;
+}
+
+/* Estilo para mensajes de error */
+.MuiAlert-root {
+  text-align: center;
+  font-size: 14px;
 }
